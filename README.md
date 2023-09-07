@@ -1,4 +1,3 @@
-
 # What is Git?
 [**Git**](https://git-scm.com) is a distributed version control system that allows a developer to track changes made to files in their projects. Teams of developers can use Git to collaborate on a single project at scale. This is made possible by branching, which allows developers to make specific changes to eventually be merged into the `main` branch of the codebase (or Git repository).
 
@@ -57,35 +56,35 @@ git commit -m "Fixed a bug in the game's scoring system."
 ``` 
 to save your recent code changes and let others know what you did.
 
-- **git push**
+### git push
 	- `git push` is similar to posting your most recent code and modifications to a public online repository so that you and your team members can view and edit the same version.
 	- For example, if you want to share your cool game code with others, you'd use "git push" like this: 
 ```bash
 git push origin main
 ``` 
 
-- **git clone**
+### git clone
 	- This command is used for making a copy of a project from the internet to your computer.
 	- For example, you can use it to copy a project from a website like this:
 ```bash
 git clone https://example.com/game.git
 ```
-- **git fetch**
+### git fetch
 	- `git fetch` is similar to checking for game updates. It doesn't alter your game; it just downloads the most recent updates from the internet to your computer so you can see what's new.
 	- You can use `git fetch` to see if there are any new levels or features in the game you're working on, but it won't actually change your game until you decide to use `git merge` or `git pull` to apply those updates.
 	
-- **git merge**
+### git merge
 	- Git merge is similar to merging two distinct code branches into one. 
 	- Use `git merge feature-branch` to combine two branches, such as when adding new characters to your game, if you have a branch for adding new features to a game called **feature-branch** and you want to integrate those features to the main game.
 
-- **git pull**
+### git pull
 	- Imagine you have a project, and you want to make sure you have the latest updates from your collaborators. You can use `git pull` to get those updates: 
 	-  You can use `git pull` to fetch and merge remote changes.
 ```bash
 git pull origin main
 ```
   
-- **git remote**
+### git remote
 	- In Git, a `remote` is like a bookmark that helps you remember the web address of a project you're working on. 
 	- For example, if you're collaborating on a game project, you might add a remote called "origin" like this: 
 ```bash
@@ -93,21 +92,36 @@ git remote add origin https://github.com/yourusername/game.git
 ```  
 Then, you can use `origin` as a shortcut to refer to that web address when you need to push or pull changes.
 
-- **git checkout**
+### git checkout
+- `git checkout` is like switching to a different branch or version of your project. 
+- For example, if you have a branch called "feature" and want to work on it, you can use 
+```bash
+git checkout feature
+```
+ - This will take you to that particular area of your project, where you can make modifications specifically for that feature.
 
-- **git branch**
+### git branch
+- The `git branch` command in Git is like making a list of different versions or "branches" of your project. 
+- For example, if you're working on a game, you can use `git branch` to create a new branch called `bug-fixes` to work on fixing game bugs separately from the main version: 
+```bash
+git branch bug-fixes
+```
+### git diff
+- You can use the `git diff` tool to compare two branches in your Git project and observe their differences.   
+```bash 
+git diff main feature
+``` 
+- For instance, to examine what changes you've made while comparing a branch called "feature" to the "main" branch you can use the above command. This command will clearly outline any new code or modifications to existing code that separate those two branches.
 
-- **git diff**
+### git log
 
-- **git log**
+### git reset
 
-- **git reset**
+### git reflog
 
-- **git reflog**
+### git rebase
 
-- **git rebase**
-
-- **git revert**
+### git revert
 
 ## Contributing
 
