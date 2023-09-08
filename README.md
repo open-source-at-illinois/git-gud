@@ -1,3 +1,4 @@
+
 # What is Git?
 [**Git**](https://git-scm.com) is a distributed version control system that allows a developer to track changes made to files in their projects. Teams of developers can use Git to collaborate on a single project at scale. This is made possible by branching, which allows developers to make specific changes to eventually be merged into the `main` branch of the codebase (or Git repository).
 
@@ -115,7 +116,22 @@ git diff main feature
 
 ### git log
 
+- `git log` is a command in Git that shows a detailed list of all the changes, or "commits," that have been made in a project. 
+- It displays information like who made each commit, when they made it, and a unique identifier for each commit, which helps you keep track of the project's history. For example, running `git log` might show you a list of commits like this:
+
+![git log image from stat 107](https://i.imgur.com/rCVUUXE.png)
+
 ### git reset
+
+- `git reset` rewinds your repository’s history all the way back to the specified unique ID. It’s as if those commits never happened. 
+- By default, `git reset` preserves the working directory. The commits are gone, but the _contents_ are still on your computer. 
+- This is the safest option, but often, you’ll want to “undo” the commits _and_ the changes in one move—that’s what `--hard` does.
+
+Commands:
+```bash
+git reset <unique_ID>
+git reset --hard <unique_ID>
+```
 
 ### git reflog
 
