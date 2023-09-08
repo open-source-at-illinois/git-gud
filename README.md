@@ -120,8 +120,6 @@ git diff main feature
 - `git log` is a command in Git that shows a detailed list of all the changes, or "commits," that have been made in a project. 
 - It displays information like who made each commit, when they made it, and a unique identifier for each commit, which helps you keep track of the project's history. For example, running `git log` might show you a list of commits like this:
 
-![git log image from stat 107](https://i.imgur.com/rCVUUXE.png =550x350)
-
 ### git reset
 
 - `git reset` rewinds your repository’s history all the way back to the specified unique ID. It’s as if those commits never happened. 
@@ -139,7 +137,7 @@ git reset --hard <unique_ID>
 - `git reflog`  is an amazing resource for recovering project history. You can recover  _almost_  anything—anything you’ve committed—via the reflog.
 - You’re probably familiar with the  `git log`  command, which shows a list of commits.  `git reflog`  is similar, but instead shows a list of times when  `HEAD`  changed.
 
-![](https://github.blog/wp-content/uploads/2015/06/f6b9f054-d891-11e4-8c53-838eff9f40ae.png?resize=1429%2C644 =550x250)
+![](https://github.blog/wp-content/uploads/2015/06/f6b9f054-d891-11e4-8c53-838eff9f40ae.png?resize=1429%2C644)
 
 ### git rebase
 - `git rebase` is similar to changing the timeframe of your code. It makes your branch appear as though it was freshly created by moving your changes to the most recent point on the main branch rather than stacking them on top of it. 
@@ -147,7 +145,7 @@ git reset --hard <unique_ID>
 ```bash
 git rebase main
 ```
-![A visualization to explain how rebase works](https://miro.medium.com/v2/resize:fit:1400/0*1VkO0oTn-PPPzJmx.gif =750x)
+![A visualization to explain how rebase works](https://miro.medium.com/v2/resize:fit:1400/0*1VkO0oTn-PPPzJmx.gif)
 
 ### git revert
 - While resetting works great for local branches on your own machine, its method of "rewriting history" doesn't work for remote branches that others are using.
