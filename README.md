@@ -154,7 +154,8 @@ git rebase main
 ```bash 
 git revert abcdef
 ``` 
-
+# Popular Issues
+Here are some common error messages you may hit, and ways you can resolve them. If you run into something that isn't here, please post an issue to the repo, and we'll try to post up a solution ASAP
 
 # Additional Resources
 - [The Simple Guide to git](https://rogerdudler.github.io/git-guide/)
@@ -176,3 +177,4 @@ Do you know any commands or terminologies that we haven't mentioned? Feel free t
 
 ## Credits
 - Avaneesh Kumar - [Github](https://github.com/avaneeshk098)
+
