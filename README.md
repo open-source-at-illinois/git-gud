@@ -149,7 +149,7 @@ git rebase main
 
 ### git revert
 - While resetting works great for local branches on your own machine, its method of "rewriting history" doesn't work for remote branches that others are using.
-- In order to reverse changes and  _share_  those reversed changes with others, we need to use  `git revert`.
+- To reverse changes and  _share_  those reversed changes with others, we need to use  `git revert`.
 - For instance, if you want to undo the changes from the last commit with the ID `abcdef`, you can use the below command to create a new commit that undoes those changes while keeping the commit history intact.
 ```bash 
 git revert abcdef
@@ -158,7 +158,8 @@ git revert abcdef
 Here are some common error messages you may hit, and ways you can resolve them. If you run into something that isn't here, please post an issue to the repo, and we'll try to post up a solution ASAP
 
 # Additional Resources
-- [The Simple Guide to git](https://rogerdudler.github.io/git-guide/)
+- [Atlassian's Guide to Git](https://atlassian.com/git/tutorials)
+-  [The Simple Guide to git](https://rogerdudler.github.io/git-guide/)
 - [Learn Git Branching Visualization](https://learngitbranching.js.org/?locale=en_US)
 - [How to undo (almost) anything with git](https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/)
 
