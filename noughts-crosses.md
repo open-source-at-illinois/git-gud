@@ -4,7 +4,7 @@
     <tr>
         <td></td>
         <td></td>
-        <td></td>
+        <td>O</td>
     </tr>
     <tr>
         <td></td>
